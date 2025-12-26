@@ -1,0 +1,12 @@
+Wine Quality Classification : De la Régression au Deep Learning
+Description : Ce projet analyse les propriétés physico-chimiques des vins rouges pour prédire leur qualité (notée de 0 à 10). L'objectif est de comparer l'efficacité de différents modèles, de la régression linéaire aux réseaux de neurones, pour identifier les facteurs influençant la perception sensorielle.
+
+Points clés du workflow :
+
+Nettoyage et exploratory dataAnalysis : Gestion des doublons (réduction à 1359 lignes) et analyse de la corrélation (Impact majeur de l'alcool et de l'acidité volatile).
+
+Standardisation : Mise à l'échelle indispensable pour les modèles basés sur la distance (SVM).
+
+Modélisation comparée : 1. Régression Linéaire Multiple (Baseline). 2. Régression Logistique (Classification binaire). 3. SVM (Marge souple vs Kernel Trick RBF). 4. Perceptron Multicouche (MLP).
+
+Résultats principaux : Le SVM avec Kernel Trick (RBF) a obtenu les meilleurs résultats avec une Précision de 77.57%, prouvant la nature non-linéaire des données.
